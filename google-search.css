@@ -8,6 +8,10 @@ body {
   align-items: center;
 }
 
+.nav-container-responsive {
+  display: none;
+}
+
 .nav-container a {
   text-decoration: none;
   margin: 12px 12px;
@@ -124,4 +128,47 @@ form input {
   width: 100%;
   position: absolute;
   bottom: 0;
+}
+
+@media all and (min-width: 300px) and (max-width: 1024px) {
+  .nav-container-responsive {
+    display: flex;
+    justify-content: flex-start;
+  }
+
+  .nav-container .link-responsive {
+    display: none;
+  }
+
+  .google-intro-img {
+    width: 170px;
+    height: 100px;
+    margin-top: 30px;
+  }
+
+  form input {
+    width: 200px;
+  }
+
+  .google-intro-btn {
+    display: none;
+  }
+
+  .google-country a {
+    padding: 6px;
+  }
+
+  .google-links {
+    display: flex;
+    flex-wrap: wrap;
+  }
+
+  .google-links a {
+    padding: 6px;
+  }
+
+  .google-footer {
+    position: absolute;
+    bottom: 0;
+  }
 }
