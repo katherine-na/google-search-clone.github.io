@@ -39,6 +39,26 @@ body {
   border-radius: 30px;
 }
 
+/* nav-responsive  */
+
+.nav-responsive {
+  display: flex;
+  justify-content: space-between;
+}
+
+.nav-responsive a {
+  text-decoration: none;
+  color: gray;
+  display: none;
+}
+
+.nav-responsive img {
+  width: 20px;
+  height: 20px;
+  border-radius: 30px;
+  display: none;
+}
+
 /* Google Intro */
 
 .google-intro {
@@ -69,13 +89,13 @@ form input {
   margin-bottom: 36px;
 }
 
-.google-intro-btn {
+.google-intro-btns {
   display: flex;
   justify-content: center;
   margin-bottom: 20px;
 }
 
-.google-intro-btn a {
+.google-intro-btns a {
   text-decoration: none;
   color: rgb(71, 70, 70);
   font-size: 14px;
@@ -83,11 +103,11 @@ form input {
   background-color: #f8f9fa;
 }
 
-.google-intro-btn a:hover {
+.google-intro-btns a:hover {
   border: 1px solid rgb(203, 202, 202);
 }
 
-.google-intro-btn a:first-child {
+.google-intro-btns a:first-child {
   margin-right: 10px;
 }
 
@@ -158,38 +178,42 @@ form input {
 
 @media all and (max-width: 425px) {
   body {
-    font-size: 12px;
+    font-size: 14px;
   }
 
   .nav-container {
-    display: flex;
-    justify-content: space-between;
-  }
-
-  .nav-container-responsive {
-    display: flex;
-    justify-content: space-between;
-  }
-
-  .nav-container .link-for-responsive {
     display: none;
   }
 
-  .nav-container .nav-container-img-menu {
-    width: 15px;
-    height: 15px;
-    margin: 0;
-    padding: 0;
+  /* nav-responsive  */
+
+  .nav-responsive {
+    display: flex;
+    justify-content: space-between;
+    padding: 20px;
   }
+
+  .nav-responsive a {
+    display: inline-block;
+    margin-right: 15px;
+  }
+
+  .nav-responsive img {
+    display: inline-block;
+    width: 20px;
+    height: 20px;
+  }
+
+  .nav-div-responsive .fa-bars {
+    display: block;
+  }
+
+  /* google-intro  */
 
   .google-intro-img {
     width: 150px;
     height: 90px;
     margin-top: 30px;
-  }
-
-  .nav-container-responsive .fa-bars {
-    display: block;
   }
 
   .fa-microphone .fa-magnifying-glass {
@@ -206,7 +230,7 @@ form input {
     height: 40px;
   }
 
-  .google-intro-btn {
+  .google-intro-btns {
     display: none;
   }
 
@@ -226,10 +250,6 @@ form input {
   }
 
   .google-footer-links a {
-    padding: 10px;
-  }
-
-  .google-links-about .link-for-responsive {
-    display: none;
+    padding: 5px;
   }
 }
