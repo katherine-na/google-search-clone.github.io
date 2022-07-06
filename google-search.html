@@ -16,17 +16,24 @@
     <title>Google</title>
   </head>
   <body>
+    <!-- nav  -->
+
     <nav class="nav-container">
       <ul class="nav-container-responsive">
-        <a>
+        <li>
           <i class="fa-solid fa-bars"></i>
-        </a>
-        <a href="">All </a>
+        </li>
+        <li>
+          <a href="">All </a>
+        </li>
       </ul>
-      <a class="link-responsive" href="#">Gmail</a>
+      <a class="link-for-responsive" href="#">Gmail</a>
       <a href="#">Images</a>
       <a href="#">
-        <i class="fa-solid fa-ellipsis"></i>
+        <img
+          class="nav-container-img-menu"
+          src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT_EqKCETYD5bxkGefYIksZ8-gQeq4_lVk8BhgXFrDwCmE8YyjeRhdQSuMU95e9bdhTW54&usqp=CAU"
+        />
       </a>
       <a href="#">
         <img
@@ -44,18 +51,16 @@
       />
     </div>
 
-    <div class="google-intro-search">
-      <form>
-        <label>
-          <i class="fa-solid fa-magnifying-glass"></i>
-        </label>
+    <form class="google-intro-search">
+      <label for="fa-solid">
+        <i id="fa-solid" class="fa-solid fa-magnifying-glass"></i>
+      </label>
 
-        <input type="search" />
-        <label>
-          <i class="fa-solid fa-microphone"></i>
-        </label>
-      </form>
-    </div>
+      <input type="search" />
+      <label for="fa-solid">
+        <i id="fa-solid" class="fa-solid fa-microphone"></i>
+      </label>
+    </form>
 
     <section class="google-intro-btn">
       <div>
@@ -65,15 +70,17 @@
         <a href="#">I'm Feeling Lucky</a>
       </div>
     </section>
-    <section class="google-intro-lan">
+    <section class="google-intro-languaje">
       <p>Google offered in: <a href="#">Español (Latinoamérica)</a></p>
     </section>
 
+    <!-- google-footer  -->
+
     <footer class="google-footer">
-      <div class="google-country">
+      <div class="google-footer-country">
         <a href="#">Mexico</a>
       </div>
-      <div class="google-links">
+      <div class="google-footer-links">
         <div class="google-links-about">
           <a
             href="https://about.google/?utm_source=google-MX&utm_medium=referral&utm_campaign=hp-footer&fg=1"

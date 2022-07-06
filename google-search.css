@@ -1,4 +1,5 @@
 body {
+  margin: 0;
   font-family: Roboto, RobotoDraft, Arial, sans-serif;
 }
 
@@ -10,6 +11,7 @@ body {
 
 .nav-container-responsive {
   display: none;
+  list-style: none;
 }
 
 .nav-container a {
@@ -21,6 +23,12 @@ body {
 
 .nav-container a:hover {
   text-decoration: underline;
+}
+
+.nav-container .nav-container-img-menu {
+  width: 20px;
+  height: 20px;
+  color: gray;
 }
 
 .nav-container img {
@@ -51,16 +59,12 @@ body {
   color: grey;
 }
 
-form {
-  border: 1px solid rgb(223, 222, 222);
-  padding: 13px;
-  border-radius: 25px;
-  margin-bottom: 40px;
-}
-
 form input {
-  width: 500px;
-  border: none;
+  width: 28%;
+  padding: 15px 20px;
+  border: 1px solid grey;
+  border-radius: 20px;
+  margin-bottom: 36px;
 }
 
 .google-intro-btn {
@@ -74,54 +78,68 @@ form input {
   color: rgb(71, 70, 70);
   font-size: 14px;
   padding: 10px 15px;
-  background-color: rgba(190, 187, 187, 0.126);
+  background-color: #f8f9fa;
+}
+
+.google-intro-btn a:hover {
+  border: 1px solid rgb(203, 202, 202);
 }
 
 .google-intro-btn a:first-child {
   margin-right: 10px;
 }
 
-.google-intro-lan {
+.google-intro-languaje {
   display: flex;
   justify-content: center;
 }
 
-.google-intro-lan p {
+.google-intro-languaje p {
   font-size: 14px;
 }
 
-.google-intro-lan a {
+.google-intro-languaje a {
   text-decoration: none;
   color: #1a0dab;
 }
 
-.google-country {
-  display: flex;
-  align-items: flex-end;
+.google-intro-languaje a:hover {
+  text-decoration: underline;
+}
+
+.google-footer-country {
   border-bottom: 1px solid rgb(214, 212, 212);
   background-color: rgba(180, 178, 178, 0.146);
 }
 
-.google-country a {
+.google-footer-country a {
   display: flex;
   display: inline-block;
-  color: #70757a;
+  color: #8e9193;
+  font-size: 13px;
   text-decoration: none;
-  padding: 14px;
+  padding: 15px;
+  margin: 0px 15px;
 }
 
-.google-links {
+.google-footer-links {
   display: flex;
   align-items: flex-end;
   justify-content: space-between;
   background: rgba(180, 178, 178, 0.146);
 }
 
-.google-links a {
+.google-footer-links a {
   display: inline-block;
   text-decoration: none;
   color: #70757a;
+  font-size: 13px;
   padding: 15px;
+  margin-left: 10px;
+}
+
+.google-footer-links a:hover {
+  text-decoration: underline;
 }
 
 .google-footer {
@@ -136,7 +154,7 @@ form input {
     justify-content: flex-start;
   }
 
-  .nav-container .link-responsive {
+  .nav-container .link-for-responsive {
     display: none;
   }
 
