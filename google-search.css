@@ -175,14 +175,35 @@ form input {
     display: none;
   }
 
+  .nav-container .nav-container-img-menu {
+    width: 15px;
+    height: 15px;
+    margin: 0;
+    padding: 0;
+  }
+
   .google-intro-img {
-    width: 170px;
-    height: 100px;
+    width: 150px;
+    height: 90px;
     margin-top: 30px;
   }
 
+  .nav-container-responsive .fa-bars {
+    display: block;
+  }
+
+  .fa-microphone .fa-magnifying-glass {
+    display: none;
+    font-size: 50px;
+  }
+
+  .fa-solid {
+    display: none;
+  }
+
   form input {
-    width: 200px;
+    width: 250px;
+    height: 40px;
   }
 
   .google-intro-btn {
