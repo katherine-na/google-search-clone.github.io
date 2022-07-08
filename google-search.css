@@ -61,18 +61,18 @@ body {
 
 /* Google Intro */
 
-.google-intro {
+.google-cover {
   display: flex;
   justify-content: center;
 }
 
-.google-intro-img {
+.cover-img {
   width: 272px;
   height: 152px;
   margin: 150px 0px 0px;
 }
 
-.google-intro-search {
+.google-search-form {
   display: flex;
   justify-content: center;
 }
@@ -81,21 +81,29 @@ body {
   color: grey;
 }
 
-form input {
-  width: 28%;
-  padding: 15px 20px;
-  border: 1px solid grey;
-  border-radius: 20px;
-  margin-bottom: 36px;
+.google-search-form {
+  display: flex;
+  justify-content: space-between;
+  border: 1px solid black;
+  border-radius: 30px;
+  width: 30%;
+  padding: 16px 20px;
+  margin: 0 auto;
 }
 
-.google-intro-btns {
+.google-search-form input {
+  width: 90%;
+  border: none;
+  outline: none;
+}
+
+.search-btns {
   display: flex;
   justify-content: center;
-  margin-bottom: 20px;
+  margin: 25px 0px;
 }
 
-.google-intro-btns a {
+.search-btns a {
   text-decoration: none;
   color: rgb(71, 70, 70);
   font-size: 14px;
@@ -103,29 +111,29 @@ form input {
   background-color: #f8f9fa;
 }
 
-.google-intro-btns a:hover {
+.search-btns a:hover {
   border: 1px solid rgb(203, 202, 202);
 }
 
-.google-intro-btns a:first-child {
+.search-btns a:first-child {
   margin-right: 10px;
 }
 
-.google-intro-languaje {
+.search-language {
   display: flex;
   justify-content: center;
 }
 
-.google-intro-languaje p {
+.search-language p {
   font-size: 14px;
 }
 
-.google-intro-languaje a {
+.search-language a {
   text-decoration: none;
   color: #1a0dab;
 }
 
-.google-intro-languaje a:hover {
+.search-language a:hover {
   text-decoration: underline;
 }
 
@@ -210,7 +218,7 @@ form input {
 
   /* google-intro  */
 
-  .google-intro-img {
+  .cover-img {
     width: 150px;
     height: 90px;
     margin-top: 30px;
@@ -230,7 +238,7 @@ form input {
     height: 40px;
   }
 
-  .google-intro-btns {
+  .search-btns {
     display: none;
   }
 
