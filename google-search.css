@@ -234,9 +234,15 @@ body {
   }
 
   form input {
-    width: 250px;
-    height: 40px;
+    width: 300px;
+    height: 30px;
+    border: 1px solid black;
   }
+
+  .google-search-form {
+    border: none;
+  }
+
 
   .search-btns {
     display: none;
